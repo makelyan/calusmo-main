@@ -27,11 +27,11 @@ function BasicExample() {
           {/* What do I want to get done today? Just this topbar? */}
         </Navbar.Brand>
           <ul class="link-list">
-            <Navbar.Brand href="../pages/Home.js"className='nav-item underlined'>Home</Navbar.Brand>     
-            <Navbar.Brand href="../pages/Services.js" className='nav-item underline'>Our Services</Navbar.Brand>
-            <Navbar.Brand href="../pages/OurTeam.js" className='nav-item underline'> Our Team</Navbar.Brand>
-            <Navbar.Brand href="../pages/Contact.js" className='nav-item underline'>Contact Us</Navbar.Brand>
-            <Navbar.Brand href="../pages/Donations.js" className='nav-item underline'>Donate</Navbar.Brand>
+            <Navbar.Brand href="/Home"className='nav-item underlined'>Home</Navbar.Brand>     
+            <Navbar.Brand href="/Services" className='nav-item underline'>Our Services</Navbar.Brand>
+            <Navbar.Brand href="/OurTeam" className='nav-item underline'> Our Team</Navbar.Brand>
+            <Navbar.Brand href="/Contact" className='nav-item underline'>Contact Us</Navbar.Brand>
+            <Navbar.Brand href="/Donations" className='nav-item underline'>Donate</Navbar.Brand>
           </ul>
           <button class="hamburger">
                 <span class="bar"></span>
