@@ -9,43 +9,55 @@
     flex-direction: column;
     align-items: center;
     min-height:38vh ;
-
-    font-size: 10vw;
     margin-left: 1em;
     margin-right: 1em;
 
 }
-
+/* title is j the USMO text*/
 .title{
+    margin-top: 15vh;
     padding-bottom: 0em;
     margin-bottom: 0em;
+    font-size: 15vw;
 }
 
+
 .sub1{
-    font-size: .3em;
+    font-size: 2vw;
     text-align: center;
     margin-top: 0em;
     padding: 0em;
 }
 
 .sub2{ 
-    font-size: .5em; 
+    font-size: 2.6vw; 
     text-align: center; 
+    max-width: 60vw;
 
 }
-
+/*mission is the entire mission section wrapper*/
 .mission{
     display: flex;
-    min-height:20vh;
+    min-height:30vh;
     margin:1.5em;
     align-items: center;
+    box-sizing: border-box;
+}
+
+h2{
+    padding: 1em; 
+    box-sizing: border-box;
+    font-size: 4vw;
+    align-self: flex-start;
+
 }
 
 .missionp{
 
     padding-left: 1.5em;
-
     margin:0em;
+    align-self: flex-start;
+    font-size:2vw;
 }
 
 .services{
@@ -54,11 +66,7 @@
 
 }
 
-h2{
-    padding: 1em; 
-    box-sizing: border-box;
 
-}
 
 .wrapper{
     display:flex;
@@ -72,3 +80,25 @@ h2{
     align-content: space-evenly;
 
 }
+
+@media screen and (max-width :600px) {
+    .title{
+        font-size: 100px;
+
+    }
+
+}
+@media screen and (max-width :600px) {
+    h2{
+        font-size: 30px;
+    }
+    .sub1{
+        font-size:16px;
+    }
+
+    .sub2{
+        font-size:20px;
+        min-width: 80vw;
+    }
+}
+
