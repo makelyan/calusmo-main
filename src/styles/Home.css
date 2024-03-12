@@ -1,0 +1,74 @@
+.background{
+    background-image:linear-gradient(rgb(176, 176, 176),white);
+ 
+}
+
+
+.hero-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:38vh ;
+
+    font-size: 10vw;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+.title{
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+}
+
+.sub1{
+    font-size: .3em;
+    text-align: center;
+    margin-top: 0em;
+    padding: 0em;
+}
+
+.sub2{ 
+    font-size: .5em; 
+    text-align: center; 
+
+}
+
+.mission{
+    display: flex;
+    min-height:20vh;
+    margin:1.5em;
+    align-items: center;
+}
+
+.missionp{
+
+    padding-left: 1.5em;
+
+    margin:0em;
+}
+
+.services{
+    background-color: grey;
+    min-height: 30vh;
+
+}
+
+h2{
+    padding: 1em; 
+    box-sizing: border-box;
+
+}
+
+.wrapper{
+    display:flex;
+   
+}
+
+.ul_div{
+    display: flex;
+    list-style-type: none ;
+    flex-direction: row;
+    align-content: space-evenly;
+
+}
