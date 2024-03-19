@@ -1,7 +1,3 @@
-.background{
-    background-image:linear-gradient(rgb(176, 176, 176),white);
- 
-}
 
 
 .hero-contents{
@@ -42,19 +38,20 @@
     margin:1.5em;
     align-items: center;
     box-sizing: border-box;
+    padding:0;
 }
 
 h2{
     padding: 1em; 
     box-sizing: border-box;
-    font-size: 4vw;
+    font-size: 3.5vw;
     align-self: flex-start;
 
 }
 
 .missionp{
 
-    padding-left: 1.5em;
+    padding:1em;
     margin:0em;
     align-self: flex-start;
     font-size:2vw;
@@ -68,18 +65,19 @@ h2{
 
 
 
-.wrapper{
+.wrapper0{
     display:flex;
+    justify-content: space-evenly;
+    align-items: center;
    
 }
 
-.ul_div{
-    display: flex;
-    list-style-type: none ;
-    flex-direction: row;
-    align-content: space-evenly;
-
+.icon-container{
+    text-align:center;
 }
+
+
+
 
 @media screen and (max-width :600px) {
     .title{
