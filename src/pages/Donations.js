@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 
 import "../styles/index.css"
 import "../styles/donations.css"
+import dogImage from "../images/dog.JPG"
 
 
 
@@ -19,13 +20,10 @@ export default function() {
 
             <h1 className = 'main-header'>Support our cause</h1>
             <div className = 'donate-wrapper'>
-                <p className = 'donate-blurb'> Donating to USMO would allow us to better serve the communities we see each week by funding our modes of transportation, allowing us to provide increased variety of supplies and nourishment, and more. We thoroughly appreciate any donors or sponsors, and we thank you for supporting our cause!</p>
+                <p className = 'donate-blurb'> Donating to USMO would allow us to better serve the communities we see each week by funding our modes of transportation, allowing us to provide increased variety of supplies and nourishment, and more. <br/> We thoroughly appreciate any donors or sponsors, and we thank you for supporting our cause!</p>
                 <div class="usmo-picture">
-                    <img src = "https://images.gofundme.com/APLtMFPmfRnD7EUL55BHdvvCP5Y=/720x405/https://d2g8igdw686xgo.cloudfront.net/78950143_1710694821214128_r.jpeg"
-                    alt = "USMO" width={700}/>
-                    <p className = 'pic_desc'>
-                        Our Organization
-                    </p>
+                    <img src = {dogImage} alt = "USMO" width={700}/>
+                    
                 </div>
             </div>
             <div className = "donate-button">
@@ -34,13 +32,7 @@ export default function() {
                         Donate
                     </button>
             </a></div>
-            {/* <form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="business" value="27TQS5YAEL9SG" />
-<input type="hidden" name="no_recurring" value="0" />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form> */}
+
 
 
             <Footer />
