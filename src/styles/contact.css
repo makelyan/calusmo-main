@@ -27,22 +27,29 @@
     font-weight: 450;
     padding-top: 50px;
     padding-left: 40px;
-    font-size: 85px;
-
+    font-size: calc(15vw / 2);
 }
 
 .mini-header {
     font-weight: 500px;
 }
 
+/*
+Header Contact Container
+*/
 .header-wrapper-contact{
-    padding-left: 50px;
-    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper-contact p{
+    width: 50%;
 }
 
 .little-blurb-contact{
     font-family: "Arvo";
-    font-size: 25px;
+    font-size: calc(3vw / 2);
     padding-left: 60px;
-
 }

@@ -7,15 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/index.css"
 import "../styles/contact.css"
 
-
 export default function() {
     return (
     <>
     <Header/>   
-      <div className = 'header-wrapper-contact'>
-        <h1 className = 'main-header'>Contact USMO</h1>
-        <p className = 'little-blurb-contact'> Whether you’re interested in joining our team, donating to USMO, or just want to find out more about what we have to offer, please get in touch and visit us at 2468 Telegraph Ave, Berkeley, CA.</p>
-      </div>
+    <div className = 'header-wrapper-contact'>
+      <h1 className = 'main-header'>Contact USMO</h1>
+      <p className = 'little-blurb-contact'> Whether you’re interested in joining our team, donating to USMO, or just want to find out more about what we have to offer, please get in touch and visit us at 2468 Telegraph Ave, Berkeley, CA.</p>
+    </div>
     <section className = 'flex-wrapper'> 
       <div className = "proj-wrapper">
       <Form className= "contact-styles">

@@ -35,14 +35,6 @@
     padding: 0;
 }
 
-h2{
-    padding: 1em; 
-    box-sizing: border-box;
-    font-size: 3.5vw;
-    align-self: flex-start;
-
-}
-
 .missionp{
     padding: 1em;
     margin: 0em;

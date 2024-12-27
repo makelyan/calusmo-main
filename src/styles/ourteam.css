@@ -1,195 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap');
-.card-wrapper {
-  display: inline-block;
-  perspective: 1000px;
 
-  .card {
-    position: relative;
-    cursor: pointer;
-    transition-duration: 0.8s;
-    transition-timing-function: ease-in-out;
-    transform-style: preserve-3d;
-  }
+/* ------------------------------
+   1) GRID WRAPPER
+   ------------------------------ */
+.full-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
 }
-.card-wrapper .card .front, .card-wrapper .card .back {
+
+/* ------------------------------
+   2) CARD WRAPPER + FLIP SETUP
+   ------------------------------ */
+.card-wrapper {
+  perspective: calc(999vw / 2); 
+  aspect-ratio: 3 / 4;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+/* Flip on hover or when .flip-right is applied */
+.card-wrapper:hover .card,
+.card-wrapper.flip-right:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-wrapper.flip-right .card .back {
+  transform: rotateY(180deg);
+}
+
+/* ------------------------------
+   3) FRONT & BACK FACES
+   ------------------------------ */
+.card .front,
+.card .back {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  transform: rotateX(0deg);
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.card-wrapper .card .front {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+/* FRONT face */
+.card .front {
+  background: rgb(242, 242, 255);
   z-index: 2;
 }
-  
-.card-wrapper .card .back, .card-wrapper.flip-right .card .back {
+
+/* BACK face */
+.card .back {
+  background-color: rgba(41, 128, 185, 0.9);
+  color: #FFFFFF;
   transform: rotateY(180deg);
 }
 
-.card-wrapper:hover .card, .card-wrapper.flip-right:hover .card {
-  transform: rotateY(180deg);
+/* ------------------------------
+   4) FRONT CONTENT
+   ------------------------------ */
+.front img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.card-wrapper, .card {
-  width: 18.75rem;
-  height: 25rem;
-  border-radius: 1.25rem;
-  margin-right: 30px;
-  margin-left: 30px;
+.front-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
+.front h1 {
+  color: black;
+  font-size: calc(7.5vw / 3);
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+.front h2 {
+  align-self: center;
+  color: black;
+  font-size: calc(6vw / 3);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+.front p {
+  font-size: calc(4.75vw / 3);;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ------------------------------
+   5) BACK CONTENT
+   ------------------------------ */
+.back-text-wrapper {
+  padding: 2px 5px;
+  background-color: rgba(242, 242, 255, 0.41);
+  height: 80%;
+  overflow-y: auto;
+}
+
+.back p {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: calc(4.75vw / 3);
+  margin: 0;
+  line-height: calc(6vw / 2);
+}
+
+/* Icons box on the back */
+.icons-box {
+  background-color: rgb(242, 242, 255);
+  height: 20%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ------------------------------
+   6) PAGE HEADER + TEAM DESCRIPTION
+   ------------------------------ */
 .header-our-team {
   width: 100%;
-  justify-items: center;
-  justify-content: center;
   text-align: center;
-  background-color: rgb(95, 142, 185, 0.56);
+  background-color: rgba(95, 142, 185, 0.56);
 }
 
-.our-team-main-header-text{
+.our-team-main-header-text {
   padding-top: 75px;
   color: white;
-  font-size: 50px;
+  font-size: calc(15vw / 2);
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
 
 .team-description {
   font-family: "Inter", sans-serif;
-  font-size: 19px;
+  font-size: calc(3vw / 2);
   font-weight: 500;
   color: white;
   width: 55%;
-  margin: 0 auto;
-}
-
-.full-cards-wrapper{
-  margin-top: 50px;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  height: auto;
-  width: auto;
-}
-
-.card .front, .card .back {
-  border-radius: 20px;
-  border-color: rgb(255, 45, 45);
-}
-.card .front {
-  background: rgb(242, 242, 255);
-  font-weight: 700;
-  width: 100px;
-  font-size: 1rem;
-}
-
-.card .back {
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  border-radius: 20px;
-  height: 400px;
-  
-}
-.front img {
-  width: 100%;
-  height: 80%; 
-  object-fit:fill;
-  border-top-left-radius:20px; 
-  border-top-right-radius:20px; 
-}
-.front p{
-  font-size: larger;
-  justify-content: center;
-  text-align: center;
-}
-.card {
-  border-color: white;
-}
-
-.icons-box {
-  background-color: rgb(242, 242, 255, 1);
-  height: 75px;
-  width: 300px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius:20px;
-  justify-content: center;
-;}
-.back-text-wrapper {
-  padding-top: 10px;
-  padding-left: 20px;
-  color:black;
-  background-color: rgb(242, 242, 255, 0.41);
-  border-top-left-radius: 20px;
-  border-top-right-radius:20px;
-  height:325px;
-
-}
-.back h2{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: light;
-  font-variation-settings:
-    "slnt" 0;
-  font-size: 15px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  padding-bottom: 5px;
-}
-.back h1{
-  padding-top:0px;
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  margin-bottom: 4px;
-}
-.back p {
-  padding-left:0px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: light;
-  font-variation-settings:
-    "slnt" 0;
-  font-size: 12px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  width: 90%;
-  padding-top: 10px;
-  line-height: 20px;
-}
-.front h1 {
-  color: black;
-  font-size: 23px;
-  font-family: "DM Serif Display", serif;
-  font-weight: 300;
-  text-align: center;
-  padding-top: 15px;
-  margin-bottom:2px;
-}
-.front h2 {
-  color: black;
-  font-size: 13px;
-  font-family:  "Inter", sans-serif;
-  font-style: light;
-  text-align: center;
-  font-weight: 300;
-  padding-top: 0px;
-}
-.back img{
-  justify-content: center;
-  width: auto;
-  height: auto;
-  max-width: 40%;
-  max-height: 40%;
-  border-radius: 20px;
-  margin-left:40px;
-  margin-top: 22px;
+  margin: auto auto 0 auto;
 }

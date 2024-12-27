@@ -6,12 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .nav-bar {
   border-bottom: 1px solid black;
   margin: 0px;
@@ -19,7 +17,6 @@ code {
   background-color: whitesmoke;
   width: auto;
 }
-
 .link-list, .home {
   padding-top:10px;
   font-family: var(--ff-sans);
@@ -30,19 +27,16 @@ code {
   transition: 0.25s ease;
   border-radius: 30px;
 }
-
 .link-list{
   padding-bottom: 7px;
   vertical-align: middle;
 }
-
 .nav-item {
   position: relative;
   list-style: none;
   margin: 0px 35px 0px 35px;
   padding: 0px 0px 0px 0px;
 }
-
 .nav-item::before {
   content: "";
   position: absolute;
@@ -53,11 +47,9 @@ code {
   background-color: black;
   transition: width 0.25s ease-out;
 }
-
 .nav-item:hover::before {
   width: 100%;
 }
-
 .nav-item.active::before {
   content: "";
   position: absolute;
@@ -68,12 +60,10 @@ code {
   background-color: black;
   transition: width 0.25s ease-out;
 }
-
 .hamburger {
   display: none;
   cursor: pointer;
 }
-
 .bar {
   display: block;
   width: 24px;
@@ -82,11 +72,9 @@ code {
   transition: all 0.3s ease-out;
   background-color: var(--text-primary);
 }
-
 .link{
   text-decoration:underline;
 }
-
 .hero-contents{
   display: flex;
   flex-direction: column;
@@ -96,30 +84,25 @@ code {
   margin-left: 1em;
   margin-right: 1em;
 }
-
 .title{
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-
 .sub1{
   font-size: .5em;
   text-align: center;
   margin-top: 0em;
   padding: 0em;
 }
-
 .mission{
   display: flex;
   min-height:20vh;
   margin:1em;
 }
-
 p{
   padding:.9em;
   margin:0em;
 }
-
 .services{
   background-color: grey;
   min-height: 30vh;

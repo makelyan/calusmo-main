@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import "../styles/Home.css"
+import "../styles/home.css"
 
 export default function() {
     return (
