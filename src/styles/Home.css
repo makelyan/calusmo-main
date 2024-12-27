@@ -1,44 +1,38 @@
-
-
 .hero-contents{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height:38vh ;
-    margin-left: 1em;
-    margin-right: 1em;
-
 }
-/* title is j the USMO text*/
+
+.image-container{
+    width: auto;
+    height: auto;
+}
+
+.banner-image {
+    width: 100%;
+}
+
 .title{
-    margin-top: 15vh;
-    padding-bottom: 0em;
-    margin-bottom: 0em;
-    font-size: 15vw;
+    margin-top: 3rem;
+    font-size: 5rem;
+    color: cornflowerblue;
+    font-style: bold;
 }
 
-
-.sub1{
-    font-size: 2vw;
+.subtitle{
+    font-size: 2rem;
     text-align: center;
-    margin-top: 0em;
-    padding: 0em;
+    color: cornflowerblue;
 }
 
-.sub2{ 
-    font-size: 2.6vw; 
-    text-align: center; 
-    max-width: 60vw;
-
-}
-/*mission is the entire mission section wrapper*/
 .mission{
     display: flex;
-    min-height:30vh;
-    margin:1.5em;
+    min-height: 30vh;
+    margin: 1.5em;
     align-items: center;
     box-sizing: border-box;
-    padding:0;
+    padding: 0;
 }
 
 h2{
@@ -50,53 +44,23 @@ h2{
 }
 
 .missionp{
-
-    padding:1em;
-    margin:0em;
+    padding: 1em;
+    margin: 0em;
     align-self: flex-start;
-    font-size:2vw;
+    font-size: 2vw;
 }
 
 .services{
     background-color: grey;
     min-height: 30vh;
-
 }
-
-
 
 .wrapper0{
     display:flex;
     justify-content: space-evenly;
-    align-items: center;
-   
+    align-items: center;  
 }
 
 .icon-container{
     text-align:center;
 }
-
-
-
-
-@media screen and (max-width :600px) {
-    .title{
-        font-size: 100px;
-
-    }
-
-}
-@media screen and (max-width :600px) {
-    h2{
-        font-size: 30px;
-    }
-    .sub1{
-        font-size:16px;
-    }
-
-    .sub2{
-        font-size:20px;
-        min-width: 80vw;
-    }
-}
-

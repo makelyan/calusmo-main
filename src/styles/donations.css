@@ -1,88 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
     background-color: #f4f4f4;
-    
 }
 
-
-
-h2 {
+h1 {
     font-family: "Figtree";
     font-weight: 450;
     padding-top: 50px;
     padding-left: 40px;
     font-size: 85px;
+    text-align: center;
 }
 
 p {
     color: #666;
     line-height: 2;
-    
 }
 
-.description-container {
-    max-width: 800px;
-    margin: auto; 
-    padding: 10px; 
-    
-    
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button {
-    background-color: #0084ff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 25px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-
-button:hover {
-    background-color: #0056b3;
-}
-
-
-
-/* Desktop first approach - Side by side layout for text and image */
-.donate-wrapper {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-around; /* Add space between text and image */
-    padding: 20px;
-}
-
-/* Responsive image to not exceed its container */
-.usmo-picture img {
-    max-width: 70%;
-    height: auto;
-    margin: 0; /* Reset any margin if present */
-}
-
-/* Centering the button */
 .donate-button {
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Full width to center on the page */
+    background-color: #0084ff;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    
 }
 
-/* Ensure the description text does not wrap too early */
-.donate-blurb {
-    max-width: 45%; /* Adjust this as needed */
-    font-size: 25px;
+.donate-content-container {
+    display: flex;
+    flex-direction: row;
 }
+
 
 /* Mobile view - Stack layout */
 @media screen and (max-width: 768px) {
@@ -97,9 +45,6 @@ button:hover {
 
     .usmo-picture img {
         max-width: 60%;
-
-        
-
     }
 
     .usmo-picture {
@@ -109,8 +54,6 @@ button:hover {
         margin-bottom: 20px;
     }
  
-
-
     .donate-blurb {
         max-width: 100%;
         margin-bottom: 20px; /* Add some space above the image */

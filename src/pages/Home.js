@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import "../styles/Home.css"
@@ -6,43 +7,13 @@ export default function() {
     return (
         <>
             <Header />
-            <div className = "background">
-                <div className="hero-contents">
-                    <h1 className = "title">USMO</h1>
-                    <p className = "sub1">Under Graduate Street Medicine Outreach</p>
-                    <p className= "sub2" >subtitle about what USMO is catchy</p>
-                </div>
+            <div className = "image-container">
+                <img className = "banner-image" alt="USMO Banner" src={require("../images/usmoBanner.png")} />
             </div>
             <div className = "mission">
                 <h2>Our Mission</h2>
-                 <p className = "missionp">Our mission is to overcome and mitigate barriers that houseless communities/encampments face in relation to accessing healthcare and other services provided in the Berkeley area.</p>
+                <p className = "missionp">Our mission is to overcome and mitigate barriers that houseless communities/encampments face in relation to accessing healthcare and other services provided in the Berkeley area. Houseless encampments are not only being continuously displaced but also often being forced to live on the outskirts of city limits, creating barriers to accessible basic resources and transportation to medical care. Such barriers, stigmatization, and as well as discrimination that houseless communities continually face in their day-to-day lives particularly make them vulnerable to preventable negative health conditions.</p>
             </div>
-
-            <div className = "services">
-            <h2>Our Services</h2>
-                <div className = "wrapper0">
-
-                    <div className = "icon-container">
-                        <img src="physical_exams.png" alt="Icon 1"></img>
-                        <p>Physical Exams</p>
-                    </div>
-
-                    <div className = "icon-container">
-                        <img src="mental_health.png" alt="Icon 2"></img>
-                        <p>Mental Health</p>
-                    </div>
-
-                    <div className = "icon-container">
-                        <img src="flu_shot.png" alt="Icon 3"></img>
-                        <p>Flu Shot</p>
-                    </div>
-
-                </div>
-               
-            </div>
-
-
-         
             <Footer />
         </>
     )

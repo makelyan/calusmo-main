@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Button from 'react-bootstrap/Button';
@@ -10,10 +11,10 @@ import "../styles/contact.css"
 export default function() {
     return (
     <>
-    <Header/>
+    <Header/>   
       <div className = 'header-wrapper-contact'>
         <h1 className = 'main-header'>Contact USMO</h1>
-        <p className = 'little-blurb-contact'> Whether you’re interested in joining our team or donating to USMO, or just want to find out more about what we have to offer, please get in touch and visit us at 2468 Telegraph Ave, Berkeley, CA.</p>
+        <p className = 'little-blurb-contact'> Whether you’re interested in joining our team, donating to USMO, or just want to find out more about what we have to offer, please get in touch and visit us at 2468 Telegraph Ave, Berkeley, CA.</p>
       </div>
     <section className = 'flex-wrapper'> 
       <div className = "proj-wrapper">

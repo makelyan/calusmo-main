@@ -6,10 +6,10 @@
     display: flex;
 }
  
-
 .flex-wrapper {
     flex-wrap: wrap;
 }
+
 .proj-wrapper {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -17,9 +17,11 @@
     padding-right: 20px;
     width: 50%;
 }
+
 .socials-mini-header {
     font-weight: 200;
 }
+
 .main-header{
     font-family: "Figtree";
     font-weight: 450;
@@ -28,15 +30,16 @@
     font-size: 85px;
 
 }
+
 .mini-header {
     font-weight: 500px;
-    
-
 }
+
 .header-wrapper-contact{
     padding-left: 50px;
     max-width: 1110px;
 }
+
 .little-blurb-contact{
     font-family: "Arvo";
     font-size: 25px;
