@@ -30,9 +30,9 @@ function Header() {
             <Navbar.Brand href="https://decal.studentorg.berkeley.edu/courses/7532" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/Donate' ? 'active' : ''}`}>Decal</Navbar.Brand>
           </Nav>
         </Navbar.Collapse>
-          <button class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
+          <button className="hamburger">
+                <span className="bar"></span>
+                <span className="bar"></span>
           </button>
         </Container>     
     </Navbar>

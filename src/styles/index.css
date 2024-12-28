@@ -6,10 +6,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Default Styles */
+.header-container {
+  font-family: "Figtree";
+  font-weight: 450;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-size: calc(15vw / 2);
+}
+
+p {
+  font-size: calc(4.75vw / 3);
+}
+
+/* Nav Bar Styles */
 .nav-bar {
   border-bottom: 1px solid black;
   margin: 0px;
@@ -98,10 +114,6 @@ code {
   display: flex;
   min-height:20vh;
   margin:1em;
-}
-p{
-  padding:.9em;
-  margin:0em;
 }
 .services{
   background-color: grey;
