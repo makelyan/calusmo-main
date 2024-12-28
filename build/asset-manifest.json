@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.a980297e.css",
-    "main.js": "/static/js/main.256f7599.js",
+    "main.css": "/static/css/main.292161af.css",
+    "main.js": "/static/js/main.90fcf886.js",
     "static/js/453.5f3b700d.chunk.js": "/static/js/453.5f3b700d.chunk.js",
-    "static/media/dog.JPG": "/static/media/dog.00b8825d44f42f5800c4.JPG",
-    "static/media/SampleHeadshot.jpeg": "/static/media/SampleHeadshot.9a1e32a1525963421942.jpeg",
+    "static/media/Isabella Lake.jpg": "/static/media/Isabella Lake.dc782fae4d183bd65a10.jpg",
+    "static/media/Grace Isaac.jpg": "/static/media/Grace Isaac.f0306974fc8893f57f6f.jpg",
+    "static/media/Alinna Villaroman.png": "/static/media/Alinna Villaroman.c7cb842b8266542247d4.png",
+    "static/media/Jessica Patrick.jpg": "/static/media/Jessica Patrick.3867e9137509803ea859.jpg",
+    "static/media/Jacob Park.jpg": "/static/media/Jacob Park.74c16a00acbd36d540ec.jpg",
+    "static/media/Steven Zhang.jpeg": "/static/media/Steven Zhang.4428ac9b6cd90b915868.jpeg",
+    "static/media/usmoBanner.png": "/static/media/usmoBanner.fe106731e9f0087298ac.png",
+    "static/media/Sanchitha Kannabran.jpg": "/static/media/Sanchitha Kannabran.7ae01247c9842375f016.jpg",
+    "static/media/Helen Li.png": "/static/media/Helen Li.1aed79a78c77c4f34b4a.png",
+    "static/media/Anju Natarajan.jpeg": "/static/media/Anju Natarajan.d4be21cac83a70234a06.jpeg",
+    "static/media/Hargun Chhabra.jpg": "/static/media/Hargun Chhabra.54a25ae65657394cf579.jpg",
     "static/media/logo.png": "/static/media/logo.142660d02dae7929a059.png",
-    "static/media/instaIcon.png": "/static/media/instaIcon.53d71d28870a3fe30227.png",
-    "static/media/githubIcon.png": "/static/media/githubIcon.1acc031ea1636ab306cd.png",
-    "static/media/linkedinIcon.png": "/static/media/linkedinIcon.11684500b13c4b0957bb.png",
     "index.html": "/index.html",
-    "main.a980297e.css.map": "/static/css/main.a980297e.css.map",
-    "main.256f7599.js.map": "/static/js/main.256f7599.js.map",
+    "main.292161af.css.map": "/static/css/main.292161af.css.map",
+    "main.90fcf886.js.map": "/static/js/main.90fcf886.js.map",
     "453.5f3b700d.chunk.js.map": "/static/js/453.5f3b700d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a980297e.css",
-    "static/js/main.256f7599.js"
+    "static/css/main.292161af.css",
+    "static/js/main.90fcf886.js"
   ]
 }

@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FlipCard from "../components/FlipCard";
 import "../styles/ourteam.css";
+import "../styles/index.css";
 
 export default function OurTeam() {
   const teamMembers = [
@@ -73,13 +74,13 @@ export default function OurTeam() {
   return (
     <>
       <Header />
-      <div className="header-our-team">
-        <h1 className="our-team-main-header-text">MEET THE TEAM</h1>
-        <p className="team-description">
-          Our team is composed of UC Berkeley undergraduates of all levels who are passionate about social good and supporting the local communities at Berkeley.
+      <div className="header-container">
+        <h1>Meet the Team</h1>
+        <p>
+          Our team is composed of UC Berkeley undergraduates of all levels who are passionate about social good 
         </p>
       </div>
-      <div className="full-cards-wrapper">
+      <div className="flip-cards-container">
         {teamMembers.map((member, index) => (
           <FlipCard
             key={index}

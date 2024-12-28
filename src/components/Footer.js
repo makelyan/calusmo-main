@@ -1,20 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-
-  // Handler for the form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Process form data here
-    console.log({ email, firstName, lastName });
-  };
-
   return (
     <footer className="bg-light text-center text-lg-start">
         <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>

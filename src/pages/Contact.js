@@ -11,15 +11,15 @@ export default function() {
     return (
     <>
     <Header/>   
-    <div className = 'header-wrapper-contact'>
-      <h1 className = 'main-header'>Contact USMO</h1>
-      <p className = 'little-blurb-contact'> Whether you’re interested in joining our team, donating to USMO, or just want to find out more about what we have to offer, please get in touch and visit us at 2468 Telegraph Ave, Berkeley, CA.</p>
+    <div className="contact header-container">
+        <h1>Contact Us</h1>
+        <p>
+          Feel free to reach out to us whether you’re interested in joining our team, donating to our cause, or if you just want to find out more about what we have to offer!
+        </p>
     </div>
-    <section className = 'flex-wrapper'> 
-      <div className = "proj-wrapper">
-      <Form className= "contact-styles">
-          <h2 className = 'mini-header'> Submit query </h2>     
-          {/* I don't like "submit form". Change this later!*/}
+    <section className = 'contact-form-container'>
+      <Form className= "contact-form">
+          <h2 className = 'mini-header'> Submit Query </h2>     
           <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email Address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -27,15 +27,15 @@ export default function() {
           </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicFirstName">
+        <Form.Group className="mb-3" controlid="formBasicFirstName">
           <Form.Label>First name</Form.Label>
           <Form.Control type="firstName" placeholder="First Name"/>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicLastName">
+        <Form.Group className="mb-3" controlid="formBasicLastName">
           <Form.Label>Last name</Form.Label>
           <Form.Control type="lastName" placeholder="Last Name"/>
         </Form.Group>
-        <Form.Group className="mb-3" contolId="formQueryBox">
+        <Form.Group className="mb-3" controlid="formQueryBox">
           <Form.Text className="text-muted">
             Enter your message here
           </Form.Text>       
@@ -45,32 +45,8 @@ export default function() {
           Submit
         </Button>
       </Form>
-      </div>
-      <div className = "proj-wrapper">
-      <div className="our-socials">
-      <div className="socials-text">
-          <h3 className = "socials-mini-header"> Our hours</h3>
-          <p> 12:39pm - 2:12am</p>
-          {/* add to calender? :D, for the degens */}
-          <h3 className = "socials-mini-header"> Email</h3>
-          <p> rav4@berkeley.edu ;D</p>
-          <h3 className = "socials-mini-header">Phone Number</h3>
-          <p> +1 (855) 444-8888</p>
-      </div>
-      <h3 className = "socials-mini-header">  Social Media platforms </h3>
-      <div className= "socials-socials">
-          {/*<img src={require("../../public/linkedin.jpg")} width="25" height="25"></img>
-          <img src={require("../../public/facebook.jpg")} width="25" height="25"></img> */}
-          {/* Doesn't work!!!  importing images is weird? Idk, figure this out later.*/}
-      </div>
-      </div>
-      </div>
     </section>
-
     <Footer />
-    
     </>
-    
-        
     )
 }
