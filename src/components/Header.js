@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/index.css"
@@ -23,11 +24,11 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className = "link-list" id = "responsive-navbar-nav">
           <Nav className="link-list">
-            <Navbar.Brand href="/home" className={`nav-item ${currentPage === '/Home' ? 'active' : ''}`}>Home</Navbar.Brand>
-            <Navbar.Brand href="/our-team" className={`nav-item ${currentPage === '/OurTeam' ? 'active' : ''}`}>Our Team</Navbar.Brand>
-            <Navbar.Brand href="/contact" className={`nav-item ${currentPage === '/Contact' ? 'active' : ''}`}>Contact</Navbar.Brand>
-            <Navbar.Brand href="https://www.gofundme.com/f/fund-undergraduate-street-medicine-outreach-ucb?utm_campaign=p_lico+share-sheet-first-launch&utm_medium=copy_link&utm_source=customer" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/Donate' ? 'active' : ''}`}>Donate</Navbar.Brand>
-            <Navbar.Brand href="https://decal.studentorg.berkeley.edu/courses/7532" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/Donate' ? 'active' : ''}`}>Decal</Navbar.Brand>
+            <Link to="/home" className={`nav-item ${currentPage === '/home' ? 'active' : ''}`}>Home</Link>
+            <Link to="/our-team" className={`nav-item ${currentPage === '/our-team' ? 'active' : ''}`}>Our Team</Link>
+            <Link to="/contact" className={`nav-item ${currentPage === '/contact' ? 'active' : ''}`}>Contact</Link>
+            <Link to="https://www.gofundme.com/f/fund-undergraduate-street-medicine-outreach-ucb?utm_campaign=p_lico+share-sheet-first-launch&utm_medium=copy_link&utm_source=customer" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/donate' ? 'active' : ''}`}>Donate</Link>
+            <Link to="https://decal.studentorg.berkeley.edu/courses/7532" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/decal' ? 'active' : ''}`}>Decal</Link>
           </Nav>
         </Navbar.Collapse>
           <button className="hamburger">
