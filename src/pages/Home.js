@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { Link } from "react-router-dom";
 import "../styles/home.css"
 import "../styles/index.css"
 
@@ -53,7 +54,7 @@ export default function() {
                         <h2>Join Us</h2>
                         <div className="card">
                             <p>
-                                All undergraduate students regardless of year and prior experience are welcome to join USMO! Feel free to contact us <a href="/contact">here</a>.
+                                All undergraduate students regardless of year and prior experience are welcome to join USMO! Feel free to contact us <Link to="/contact">here</Link>.
                             </p>
                         </div>
                     </section>
