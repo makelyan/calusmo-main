@@ -6,7 +6,6 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none;
 }
 
 code {
@@ -23,7 +22,7 @@ code {
   padding: 1.5rem;
   
   width: 100%;
-  background-color: rgba(95, 142, 185, 0.56);
+  background-color: rgba(17, 103, 178, 0.56);
 
   display: flex;
   flex-direction: column;
@@ -36,7 +35,7 @@ code {
 }
 
 .header-container p {
-  font-size: 1rem;
+  font-size: 1.75rem;
   font-weight: 400;
   width: 80%;
 }
@@ -239,5 +238,29 @@ code {
   .text-container-left p {
     margin: 0;
     text-align: center;
+  }
+}
+
+@media (max-width: 514px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+  
+  .header-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 80%;
+  }
+
+  .text-container-left h2, .text-container-right h2, .text-container-top h2 {
+    font-size: 2rem;
+  }
+
+  .text-container-left p, .text-container-right p, .text-container-top p {
+    font-size: 0.575rem;
+  }
+
+  strong {
+    font-size: 0.575rem;
   }
 }

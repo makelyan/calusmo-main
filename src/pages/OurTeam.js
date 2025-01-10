@@ -2,7 +2,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FlipCard from "../components/FlipCard";
 import "../styles/ourteam.css";
-import "../styles/index.css";
 
 export default function OurTeam() {
   const teamMembers = [
@@ -21,9 +20,23 @@ export default function OurTeam() {
       linkedinLink: "https://linkedin.com/"
     },
     {
+      name: "Alinna Villaroman",
+      position: "Finance Head",
+      bio: "Hey guys, Alinna here, your finance head!! If I’m not handling your precious cargo, I’m off spending undisclosed amounts of my own money on little figures and trinkets that give me emotional support. I’m a junior majoring in MCB, and fun fact, I’ll watch or read anything you recommend me (and I mean anything) so let me know what I can use as an excuse to waste my time on next!",
+      instagramLink: "https://instagram.com/",
+      linkedinLink: "https://linkedin.com/"
+    },
+    {
       name: "Steven Zhang",
       position: "Finance Chair",
       bio: "Hey y'all! I'm a fourth-year Rhetoric/Legal Studies major who helps teach our DeCal, Health and the Unhoused. I love backpacking, acquiring new solo hobbies, and all the friends I've made through USMO! I hope that all our new members come to feel the same way :)",
+      instagramLink: "https://instagram.com/",
+      linkedinLink: "https://linkedin.com/"
+    },
+    {
+      name: "Grace Isaac",
+      position: "Finance Chair",
+      bio: "Hello! I am a third year MCB major and love cats, baking, and going on walks. As a finance chair, I focus on grants and development.",
       instagramLink: "https://instagram.com/",
       linkedinLink: "https://linkedin.com/"
     },
@@ -38,20 +51,6 @@ export default function OurTeam() {
       name: "Hargun Chhabra",
       position: "External Chair",
       bio: "Hargun Chhabra is one of the Chairs of the External Committee for USMO. He is currently pursuing a Molecular Environmental Biology major and a Nutrition minor. Hargun is dedicated to serving the needs of the various unhoused communities here in the wider East Bay region, striving to make a positive impact on their lives.",
-      instagramLink: "https://instagram.com/",
-      linkedinLink: "https://linkedin.com/"
-    },
-    {
-      name: "Alinna Villaroman",
-      position: "Finance Head",
-      bio: "Hey guys, Alinna here, your finance head!! If I’m not handling your precious cargo, I’m off spending undisclosed amounts of my own money on little figures and trinkets that give me emotional support. I’m a junior majoring in MCB, and fun fact, I’ll watch or read anything you recommend me (and I mean anything) so let me know what I can use as an excuse to waste my time on next!",
-      instagramLink: "https://instagram.com/",
-      linkedinLink: "https://linkedin.com/"
-    },
-    {
-      name: "Grace Isaac",
-      position: "Finance Chair",
-      bio: "Hello! I am a third year MCB major and love cats, baking, and going on walks. As a finance chair, I focus on grants and development.",
       instagramLink: "https://instagram.com/",
       linkedinLink: "https://linkedin.com/"
     },
@@ -75,23 +74,26 @@ export default function OurTeam() {
     <>
       <Header />
       <div className="header-container">
-        <h1>Meet the Team</h1>
+        <h1>MEET THE TEAM</h1>
         <p>
-          Our team is composed of UC Berkeley undergraduates of all levels who are passionate about social good 
+          Our team is composed of UC Berkeley undergraduates of all levels who are passionate about social good and supporting the local communities at Berkeley.
         </p>
       </div>
-      <div className="flip-cards-container">
+
+      <div className="flip-cards-grid">
         {teamMembers.map((member, index) => (
-          <FlipCard
-            key={index}
-            name={member.name}
-            position={member.position}
-            bio={member.bio}
-            instagramLink={member.instagramLink}
-            linkedinLink={member.linkedinLink}
-          />
+          <div className="team-member-container" key={index}>            
+            <FlipCard
+              name={member.name}
+              position={member.position}
+              bio={member.bio}
+              instagramLink={member.instagramLink}
+              linkedinLink={member.linkedinLink}
+            />
+          </div>
         ))}
       </div>
+
       <Footer />
     </>
   );

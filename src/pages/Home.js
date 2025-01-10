@@ -34,9 +34,9 @@ export default function() {
                     <section className = "our-story-container text-container-top">
                         <h2>Our Story</h2>
                         <div className="card">
-                            <h5>
+                            <strong>
                                 USMO started in 2021 with a dream and a kitchen...
-                            </h5> 
+                            </strong> 
                             <p>    
                             Our first outreach involved only three ingredients: peanut butter, jelly, and whole wheat bread. It 
                             came as a response from our small group of founders— Jason Abbas, Hamilton Nguyen, John Son, Aditya 
@@ -53,7 +53,7 @@ export default function() {
                         <h2>Join Us</h2>
                         <div className="card">
                             <p>
-                                All undergraduate students regardless of year and prior experience are welcome to join USMO! Feel free to contact us <a href="/contact">here</a>
+                                All undergraduate students regardless of year and prior experience are welcome to join USMO! Feel free to contact us <a href="/contact">here</a>.
                             </p>
                         </div>
                     </section>
