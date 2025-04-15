@@ -27,7 +27,7 @@ function Header() {
             <Link to="/home" className={`nav-item ${currentPage === '/home' ? 'active' : ''}`}>Home</Link>
             <Link to="/our-team" className={`nav-item ${currentPage === '/our-team' ? 'active' : ''}`}>Our Team</Link>
             <Link to="/contact" className={`nav-item ${currentPage === '/contact' ? 'active' : ''}`}>Contact</Link>
-            <Link to="https://www.gofundme.com/f/fund-undergraduate-street-medicine-outreach-ucb?utm_campaign=p_lico+share-sheet-first-launch&utm_medium=copy_link&utm_source=customer" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/donate' ? 'active' : ''}`}>Donate</Link>
+            <Link to="https://gofund.me/a035f677" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/donate' ? 'active' : ''}`}>Donate</Link>
             <Link to="https://decal.studentorg.berkeley.edu/courses/7532" target="_blank" rel="noopener noreferrer" className={`nav-item ${currentPage === '/decal' ? 'active' : ''}`}>Decal</Link>
           </Nav>
         </Navbar.Collapse>
